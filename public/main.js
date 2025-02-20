@@ -1,4 +1,4 @@
-const socket = new WebSocket("ws://localhost:6969");
+const socket = new WebSocket("wss://esp32socketserver.onrender.com/");
 
 socket.onopen = () => console.log("Connected to WebSocket server");
 socket.onmessage = (event) => {

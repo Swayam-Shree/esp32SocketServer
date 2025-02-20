@@ -27,7 +27,6 @@ wss.on('connection', (socket) => {
             espSocket = socket;
             console.log("ESP connected");
             espSocket.send("espInitAck");
-            console.log(socket.id);
         }
 
         if (espSocket && espSocket.id === socket.id) {
